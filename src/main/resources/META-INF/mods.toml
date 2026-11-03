@@ -1,0 +1,23 @@
+[[mods]]
+modId="examplemod"
+version="${file.jarVersion}"
+displayName="Example Mod"
+credits=""
+authors="You"
+description='''
+Longer description of the mod.
+'''
+
+[[dependencies.examplemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

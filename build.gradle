@@ -1,0 +1,32 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.+'
+}
+
+group = 'com.example'
+version = '1.0'
+archivesBaseName = 'examplemod'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'forge'
+        url = 'https://files.minecraftforge.net/maven'
+    }
+}
+
+ext.minecraft {
+    version = '1.18.2-40.1.0'
+    runDir = 'run'
+}
+
+ext.forge {
+    version = '40.1.0'
+}
+
+ext.archives {
+    builds.forEach {
+        it.outputs.forEach {
+            it.classifier = ""
+        }
+    }
+}
